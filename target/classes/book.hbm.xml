@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.docsconsole.tutorials.hibernate5.entity" default-access="property">
+
+	<class name="Book" table="book_1">
+	
+		<id name="bookId" column="BOOK_ID">
+			<generator class="identity" />
+		</id>
+		<property name="bookName" column="BOOK_NAME"></property>
+		<property name="bookPrice" column="BOOK_PRICE"></property>
+
+	</class>
+	
+</hibernate-mapping>
